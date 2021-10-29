@@ -58,26 +58,17 @@ function loadQuiz() {
       let x = i + 1;
       // console.log(x +" ? "+ quizData[currentQuestion].correct);
       if(radio[i].checked) {
-        alert("c1");
-        if (x === quizData[currentQuestion].correct) {
-          alert("correct");
+        //alert("c1");
+        // console.log(x +" "+ quizData[currentQuestion-1].correct);
+        // console.log(x === quizData[currentQuestion-1].correct);
+        if (x === quizData[currentQuestion-1].correct) {
+          //alert("correct");
           isCorrect = true;
           correctAnswer++;
-          break;
+          //break;
         }
         radio[i].checked = false;
       }
-      // if (x === quizData[currentQuestion].correct) {
-      //     if(radio[i].checked){
-      //       alert("correct");
-      //       isCorrect = true;
-      //       correctAnswer++;
-      //       break;
-      //     }
-      // } 
-      // if (radio[i].checked) {
-      //   radio[i].checked = false;
-      // }
     }
     currentQuestion++;
   } else {
