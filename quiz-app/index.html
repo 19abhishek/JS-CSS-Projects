@@ -1,37 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Zen+Antique+Soft&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
-</head>
-<body>
-    <div class="quiz-container" id= "quiz">
-        <div class="quiz-header">
-            <h2 id="question">Question Text</h2>
-            <ul>
-                <li>
-                    <input type="radio" name = "options">
-                    <label for="a" id = "option_a">Question a</label>
-                </li>
-                <li>
-                    <input type="radio" name = "options">
-                    <label for="b" id = "option_b">Question b</label>
-                </li>
-                <li>
-                    <input type="radio" name = "options">
-                    <label for="c" id = "option_c">Question c</label>
-                </li>
-                <li>
-                    <input type="radio" name = "options">
-                    <label for="d" id = "option_d">Question d</label>
-                </li>
-            </ul>
-        </div>
-        <button id = "btn" type="submit">Submit</button>
+  </head>
+  <body>
+    <div class="quiz-container" id="quiz">
+      <div class="quiz-header">
+        <h2 id="question">Question Text</h2>
+        <ul>
+          <li>
+            <input type="radio" id= 'a' name="options" class = "answer"/>
+            <label for="a" id="option_a">Question a</label>
+          </li>
+          <li>
+            <input type="radio" id= 'b' name="options" class = "answer"/>
+            <label for="b" id="option_b">Question b</label>
+          </li>
+          <li>
+            <input type="radio" id= 'c' name="options" class = "answer"/>
+            <label for="c" id="option_c">Question c</label>
+          </li>
+          <li>
+            <input type="radio" id= 'd' name="options" class = "answer"/>
+            <label for="d" id="option_d">Question d</label>
+          </li>
+        </ul>
+      </div>
+      <button id="btn" type="submit" class="btn">Submit</button>
+      <div class="result">
+        <center>
+        Thanks for taking the quiz 💡 <br />
+        You scored <span id="score_value">0</span>/4 
+        </center>
+      </div>
     </div>
-</body>
+  </body>
 </html>

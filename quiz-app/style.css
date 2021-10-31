@@ -11,7 +11,8 @@ body {
     justify-content: center;
     min-height: 100vh;
     margin: 0;
-    color: #212529;
+    color: #333435;
+    font-family: 'Roboto', sans-serif;
 }
 
 .quiz-container {
@@ -25,6 +26,17 @@ body {
 
 .quiz-header {
     padding: 3rem;
+}
+
+.result {
+    display: none;
+    padding: 4rem;
+    font-size: 32px;
+    font-weight: 500;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    line-height: 3rem;
 }
 
 #question {
@@ -70,4 +82,3 @@ button:hover {
     cursor: pointer;
     background-color: #1b4332;
 }
-
