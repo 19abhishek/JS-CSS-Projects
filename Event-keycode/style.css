@@ -19,7 +19,7 @@ body {
 .initial {
   background-color: azure;
   padding: 20px;
-  color: rgb(139, 131, 131);
+  color: rgb(167, 158, 158);
 }
 
 .initial.no-show {
