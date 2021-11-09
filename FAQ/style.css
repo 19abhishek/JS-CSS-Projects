@@ -85,14 +85,8 @@ body {
   display: none;
 }
 
-.faq-answer {
-}
-
 .faq-answer.close {
   display: none;
-}
-
-.answer-text {
 }
 
 .close-icon {
@@ -107,7 +101,4 @@ body {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-}
-
-.close-icon.close {
 }
