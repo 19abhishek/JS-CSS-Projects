@@ -11,7 +11,7 @@ counts.forEach((count) => {
       current++;
       var interval = setInterval(counter, 100);
     } else {
-      current = 0;
+      //current = 0;
       count.innerHTML = follower;
       // clearInterval(interval);
       // console.log("hello");
