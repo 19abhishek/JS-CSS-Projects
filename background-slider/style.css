@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap");
+
+:root {
+  --background-color: rgba(0, 0, 0, 0.5);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Muli", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.background {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--background-color);
+  z-index: -1;
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
+}
+
+.bg1.show {
+  background-image: url(work2.jpeg);
+}
+
+.bg2.show {
+  background-image: url(pathway.jpeg);
+}
+
+.bg3.show {
+  background-image: url(work.jpeg);
+}
+
+.bg4.show {
+  background-image: url(work2.jpeg);
+}
+
+.left {
+  position: absolute;
+  left: -32px;
+  height: 32px;
+  width: 32px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.left-icon {
+  height: 24px;
+  width: 24px;
+}
+
+.right {
+  position: absolute;
+  right: -32px;
+  height: 32px;
+  width: 32px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.right-icon {
+  height: 24px;
+  width: 24px;
+}
+
+.highlight {
+  position: relative;
+  background: transparent;
+  border: 1px solid;
+  height: 75vh;
+  width: 75vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 12.5vh;
+  left: 12.5vw;
+  z-index: -1;
+}
