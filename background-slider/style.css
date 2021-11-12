@@ -16,77 +16,83 @@ body {
   justify-content: center;
   height: 100vh;
   margin: 0;
+  background-image: url(images/baseball.jpeg);
+  background-position: center center;
+  background-size: cover;
+  transition: 0.4s ease-in;
 }
 
-.background {
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
   height: 100vh;
   width: 100vw;
-  background-color: var(--background-color);
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: -1;
-  /* background-repeat: no-repeat; */
-  /* background-size: cover; */
 }
 
-.bg1.show {
-  background-image: url(work2.jpeg);
+.container {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  height: 75vh;
+  width: 75vw;
+  position: relative;
 }
 
-.bg2.show {
-  background-image: url(pathway.jpeg);
+.slides {
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url(images/baseball.jpeg);
+  background-position: center center;
+  background-size: cover;
+  position: absolute;
+  transition: 0.4s;
 }
 
-.bg3.show {
-  background-image: url(work.jpeg);
-}
-
-.bg4.show {
-  background-image: url(work2.jpeg);
+.slides.active {
+  opacity: 1;
 }
 
 .left {
   position: absolute;
+  top: 50%;
   left: -32px;
   height: 32px;
   width: 32px;
-  border: 1px solid black;
+  border: 1px solid white;
+  border-right: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  color: white;
+  z-index: 5;
 }
 
 .left-icon {
-  height: 24px;
-  width: 24px;
+  height: 48px;
+  width: 48px;
+  cursor: pointer;
 }
 
 .right {
   position: absolute;
+  top: 50%;
   right: -32px;
   height: 32px;
   width: 32px;
-  border: 1px solid black;
+  border: 1px solid white;
+  border-left: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  color: white;
 }
 
 .right-icon {
-  height: 24px;
-  width: 24px;
-}
-
-.highlight {
-  position: relative;
-  background: transparent;
-  border: 1px solid;
-  height: 75vh;
-  width: 75vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  top: 12.5vh;
-  left: 12.5vw;
-  z-index: -1;
+  height: 48px;
+  width: 48px;
 }
