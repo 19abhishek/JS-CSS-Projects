@@ -9,7 +9,7 @@ counts.forEach((count) => {
     if (current < follower) {
       count.innerHTML = current;
       current++;
-      var interval = setInterval(counter, 100);
+      setInterval(counter, 100);
     } else {
       //current = 0;
       count.innerHTML = follower;
