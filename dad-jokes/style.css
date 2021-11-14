@@ -18,7 +18,7 @@ body {
 
 .container {
   background-color: #e8590c;
-  width: 600px;
+  width: 800px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -34,7 +34,7 @@ body {
 }
 
 .joke-text {
-  padding: 2rem 0;
+  padding: 2rem 2rem;
   font-size: 24px;
 }
 

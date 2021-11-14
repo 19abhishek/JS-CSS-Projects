@@ -1,14 +1,17 @@
 const jokeText = document.querySelector(".joke-text");
 const jokeBtn = document.querySelector(".btn");
 
+console.log(jokeBtn);
+console.log(jokeText);
+
 jokeBtn.addEventListener("click", generateJoke);
 
 generateJoke();
 
 async function generateJoke() {
   const config = {
-    header: {
-      Accept: "application/Json",
+    headers: {
+      Accept: "application/json",
     },
   };
 
