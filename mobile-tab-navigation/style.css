@@ -2,6 +2,7 @@
 
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 
 body {
@@ -11,16 +12,63 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  /* overflow: hidden; */
-  margin: 0;
+
+  background-color: #495057;
 }
 
 .phone {
   height: 80vh;
   width: 400px;
-  background-color: tomato;
+  border-radius: 10px;
+  border: 2px solid white;
+  position: relative;
+  /* overflow: hidden; */
 }
 
-img {
-  height: 30px;
+.phone .content {
+  height: 90%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  opacity: 0;
+}
+
+.phone .content.show {
+  opacity: 1;
+}
+
+nav {
+  background-color: #f8f9fa;
+  position: absolute;
+  height: 10%;
+  width: 100%;
+  bottom: 0;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  padding: 0 1rem;
+}
+nav ul li {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+nav ul li.active,
+nav ul li:hover {
+  color: #868e96;
 }
