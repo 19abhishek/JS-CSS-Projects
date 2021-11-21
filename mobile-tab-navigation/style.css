@@ -14,3 +14,13 @@ body {
   /* overflow: hidden; */
   margin: 0;
 }
+
+.phone {
+  height: 80vh;
+  width: 400px;
+  background-color: tomato;
+}
+
+img {
+  height: 30px;
+}
