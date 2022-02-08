@@ -7,6 +7,7 @@ body {
   background-color: #1a1a1a;
   color: white;
   position: relative;
+  overflow-x: scroll;
 }
 
 .container {
@@ -32,7 +33,11 @@ body {
 }
 
 .card:hover {
-  transform: translateX(-5%);
+  transform: translateX(-5%) translateY(-1rem);
+}
+
+.card:hover ~ .card {
+  transform: translateX(20px);
 }
 
 .date {
@@ -41,6 +46,16 @@ body {
 
 .heading {
   margin-top: 10px;
+}
+
+.heading:hover {
+  background: linear-gradient(90deg, #ff8a00, #e52e71);
+  text-shadow: none;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-box-decoration-break: clone;
+  background-clip: text;
+  border-color: white;
 }
 
 .details {
